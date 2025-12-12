@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1764920356 source:d:\work\instructor\oop\intake46\day9\main.cpp
+	<iostream>
+	"complex.h"
+
+1764920399 d:\work\instructor\oop\intake46\day9\include\complex.h
+	<iostream>
+

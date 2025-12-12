@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			*{font-size:22; font-weight: bold}
+			p{color:darkblue}
+			#p1{color:blue}
+			input[type="text"]{color:red}
+			p.EN{text-align: left}
+			.AR{text-align: right}
+			div p{color:violet}
+			div>p{color:greenyellow}
+			h4~div{color:yellow}
+			h4+div{color:bisque}
+			
+			a:visited{color:yellow}
+			a:link{color:blueviolet}
+			a:hover{color:red}
+
+			input[type="text"]:focus{background-color: black; color:white}
+		
+		</style>
+	</head>
+	<body>
+		<p id="p1" class="EN">Welcome to my website</p>
+		<p calss="EN">Welcome again!</p>
+
+		<p id="p1_AR" class="AR">اهلا اى حاجة</p>
+		<div class="AR">اهلا تانى</div>
+
+		<label for="Name">Your name</label>
+		<input type="text">
+		<input type="button" value="submit">
+		<hr>
+		<p>-----------------descendant selector------------------</p>
+
+		<div> 
+			<p> I am p direct child of div</p>
+			<span>
+				<p> I am another p descedent from div</p>
+			</span>
+		</div>
+
+		<p>-----------------sibling selector------------------</p>
+		<h4>This is h4</h4>
+		<div> I am div after h4</div>
+
+		<h4>This is another h4</h4>
+		<br>
+		<div> I am div after h4 and br</div>
+		<p>-----------------pseudo class------------------</p>
+		<a href="#" >click here</a>
+	</body>
+</html>

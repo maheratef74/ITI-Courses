@@ -1,0 +1,154 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="WVcxqAQOWMf9Ddn53eNW">
+    <mxGraphModel dx="872" dy="466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YrUAug5Me10--fG0ZxtF-1" value="Employee" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="44" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-2" value="&lt;u&gt;emp_no&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="74" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-3" value="emp_name" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="74" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-4" value="dept_name" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="239" y="74" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-5" value="dept_manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="74" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-9" value="works_on" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="162" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-12" value="&lt;u&gt;emp_no&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="192" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-17" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="192" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-18" value="project_start_data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="192" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-22" value="weeks_on_project" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="192" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-23" value="1NF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="79" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-24" value="project_locations" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-25" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-26" value="location" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-27" value="Employee" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="450" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-28" value="&lt;u&gt;emp_no&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="82" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-29" value="emp_name" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="162" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-30" value="dept_name" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-31" value="dept_manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322" y="480" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-32" value="works_on" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="82" y="568" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-33" value="&lt;u&gt;emp_no&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="598" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-34" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="163" y="598" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-36" value="weeks_on_project" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="598" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-37" value="project_locations" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="656" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-38" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="686" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-39" value="location" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="163" y="686" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-40" value="2NF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="79" y="400" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-41" value="project" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="750" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-42" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="780" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-43" value="project_start_data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="780" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-44" value="Employee" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="930" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-45" value="&lt;u&gt;emp_no&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="82" y="960" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-46" value="emp_name" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="162" y="960" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-47" value="dept_name" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="960" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-49" value="works_on" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="82" y="1048" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-50" value="&lt;u&gt;emp_no&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="1078" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-51" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="163" y="1078" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-52" value="weeks_on_project" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="1078" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-53" value="project_locations" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="1136" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-54" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="1166" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-55" value="location" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="163" y="1166" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-56" value="3NF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="79" y="880" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-57" value="project" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="1230" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-58" value="&lt;u&gt;project_id&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="1260" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-59" value="project_start_data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="1260" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-60" value="Depertament" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="1310" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-61" value="&lt;u&gt;dept_name&lt;/u&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="1340" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YrUAug5Me10--fG0ZxtF-62" value="dept_manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1340" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

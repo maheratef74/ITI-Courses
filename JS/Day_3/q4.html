@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <h1>Day 3 Javascript</h1>
+    <h2>Question 4</h2>
+    <a href="#" id="openLink">open new window</a>
+    <br>
+    <a href="#" id="closeLink">colse the new window</a>
+    <script>
+        /*
+          Make a link that on its onClick event opens a new window after 3 seconds, 
+          and write long paragraphs on it. Also, make another link that closes this page.
+          (Note that the browser may block the opening of the new window;
+          make sure that you allow this page to open popups in your browser). 
+        */
+      
+        var newWin;
+
+        function openWindow() {
+            setTimeout(function () {
+                newWin = window.open("", "_blank", "width=500,height=500");
+                if (!newWin) {
+                        alert("Popup blocked");
+                        return;
+                    }
+                newWin.document.write("C# is better than Javascript<br>".repeat(100));
+
+                 newWin.setInterval(function () {
+                    newWin.scrollBy(0, 50);
+                }, 1000);
+
+            }, 3000);
+
+           
+        }
+
+        function closePage() {
+            newWin.close();
+        }
+
+        window.onload = function () {
+            document.getElementById("openLink").onclick = openWindow;
+            document.getElementById("closeLink").onclick = closePage;
+        };
+    
+      
+    </script>
+</body>
+</html>

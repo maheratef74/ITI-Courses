@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Regestration from</title>
+    </head>
+
+    <body>
+        <fieldset>
+            <legend>Registration</legend>
+            <form method="post" action="Thankyou.html" tabindex="1">
+            
+                <input type="hidden"/>
+                <label accesskey="f" for="fn">First Name</label> <input id="fn" type="text"/> <br>
+                <label for="ln">last Name</label> <input id="ln" type="text"/> <br>
+                <label for="email">Email</label> <input id="email" type="email" /> <br>
+                <label for="pass">Password</label> <input id="pass" type="password" tabindex="2"/> <br>
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" id="birthDate" name="birthDate"><br>
+                <label for="f">Picture</label><input id="f" type="file" name="documents[]" multiple/> <br>
+                <label for="m">Mail</label><input id="m" type="radio" name="gender"/> 
+                <label for="f">Femal</label><input id="f" type="radio" name="gender"/> <br>
+
+                <label for="Faculty">Faculty</label>
+                <select name="Faculty" id="Faculty">
+                    <option value="S">Sohag</option>
+                    <option value="A">Assiut</option>
+                    <option value="C">airo</option>
+                    <option value="A">Alex</option>
+                </select>
+
+                <h3>Interests</h3>
+               <label for="F">Football</label> <input type="checkbox" name="" id="F">
+               <label for="s">Swimming</label> <input type="checkbox" name="" id="s">
+               <label for="g">Games</label> <input type="checkbox" name="" id="g">
+               <label for="p">playstation</label> <input type="checkbox" name="" id="p">
+                <br>
+               <label for="">About You</label> <textarea> </textarea> <br>
+              
+               <input type="radio" name="" id="agree"> <label for="agree">I agreed to the <a href="termsAndCondition.html">terms and condition checkbox</a></label>
+                <input type="submit" />
+                <input type="reset" name="" id="">
+            
+            </form> 
+        </fieldset>
+        
+
+         <table border="1">
+            
+            <colgroup>
+                <col style="background-color: #f0f0f0;"> 
+                <col> 
+                <col style="font-weight: bold;"> 
+            </colgroup>
+            
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td rowspan="2">Maher</td>
+                    <td>HTML</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>100</td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="2">Ahmed</td>
+                    <td>JS</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td></td> 
+                    <td colspan="2" style="text-align: right; font-weight: bold;">
+                        Total Score is 400
+                    </td>  
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

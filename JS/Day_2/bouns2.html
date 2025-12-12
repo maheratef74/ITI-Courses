@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Day 2 JS </h1>
+        <h2>bouns</h2>
+
+      <script>
+
+            var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var lower = "abcdefghijklmnopqrstuvwxyz";
+            var numbers = "0123456789";
+            var symbols = "!@#$%^&*()_+-={}[];:<>,.?/";
+
+            var allChars = upper + lower + numbers + symbols;
+
+   
+            var length = prompt("Enter password length:");
+
+            while (isNaN(length) || length <= 0) {
+                length = prompt("Invalid! Enter a positive number for password length:");
+            }
+
+            var password = "";
+
+            for (var i = 0; i < length; i++) {
+                var randomIndex = Math.floor(Math.random() * allChars.length);
+                password += allChars[randomIndex];
+            }
+            alert("Generated Password:\n" + password);
+
+    </script>
+
+    </body>
+</html>

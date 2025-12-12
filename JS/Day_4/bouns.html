@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        Name: <input id="name" type="text"> 
+        <img id="notvalid" src="notvalid.png" width="50px" height="50px" alt="" style="display: none;">
+        <img id="valid" src="valid.png" width="50px" height="50px" alt="" style="display: none;">
+
+        <br> 
+        Email: <input type="email"> <br>
+        <select name="" id=""> 
+            <option value="">select</option>
+            <option value="">Sohag</option>
+            <option value="">Cairo</option>
+            <option value="">Alex</option>
+        </select><br>
+       Password: <input id="pass" type="password"><br>
+       Repeat Password <input id="repetPass" type="password">
+         <img id="notvalid" src="notvalid.png" width="50px" height="50px" alt="" style="display: none;">
+        <img id="valid" src="valid.png" width="50px" height="50px" alt="" style="display: none;">
+       <br>
+
+      <input type="checkbox"> i accept the terms and conditions
+
+      <button id="submitBut" type="button">Register</button>
+    </form>
+    <script>
+
+        /*
+            4-In the previous assignment, 
+         Handle the onSubmit event for the form, and on the event handler function, 
+         check for the validation of the full name and password, if they’re correct,
+         then submit the form (use Submit() function), if they’re not correct stop the form submitting 
+         (use event.preventDefault())
+
+        */
+        var vaildImg = document.getElementById("valid");
+        var notVaildImg = document.getElementById("notvalid");
+
+        document.getElementById("submitBut").addEventListener("click" , validateData);
+        function validateData(){
+            var nameInput = document.getElementById("name");
+            
+            var nameValue = nameInput.value;
+            var submit = 1;
+            if (nameValue.length < 4) {
+                notVaildImg.style.display = "inline";  
+                nameInput.focus();              
+                nameInput.select();  
+                submit = 0;               
+            } else {
+                vaildImg.style.display = "inline";   
+            }
+
+            var pass = document.getElementById("pass");
+            var repetPass = document.getElementById("repetPass");
+            if(pass.value != repetPass.value){
+                notVaildImg.style.display = "inline";
+                submit = 0;
+            }else vaildImg.style.display = "inline";
+
+            var form = document.querySelector("form");
+            if(submit)
+            {
+                
+                form.submit();
+                window.location.href = "Thanks.html";
+            } 
+        }
+    </script>
+</body>
+</html>

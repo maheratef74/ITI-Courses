@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Day 2 JS </h1>
+        <h2>Question 1</h2>
+
+        <script>
+         /*
+            Create array that contain some tips about JavaScript (Array of 10 strings, 
+            each string is tip about JS), 
+            and show random tip for the user each time he opens the page "Tip of the day". 
+         */
+            var tips = [
+                "Use === instead of == to avoid unexpected type conversions.",
+                "Always declare variables with let or const instead of var.",
+                "Use template literals (` `) instead of string concatenation.",
+                "Arrow functions provide a shorter syntax for writing functions.",
+                "Use array methods like map, filter, and reduce for cleaner code.",
+                "Use console.table() to display arrays and objects in a nice table form.",
+                "Async/await makes working with promises easier to read.",
+                "Destructuring helps extract values from objects and arrays cleanly.",
+                "Use default parameters in functions to avoid undefined values.",
+                "LocalStorage can be used to store simple data in the browser."
+            ];
+
+            function showRandomTip() {
+                var randomIndex = Math.floor(Math.random() * tips.length);
+                document.write(tips[randomIndex])
+            }
+
+            showRandomTip();
+        </script>
+    </body>
+</html>

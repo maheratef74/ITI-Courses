@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Day 2 JS </h1>
+        <h2>Question 4</h2>
+        <script>
+        /*
+            Show prompt that ask user to enter his birth date and tell user to enter the date in 
+            the following format (DD – MM – YYYY) ex. 22–01–1999, 
+            and then create function that take user input as a parameter 
+            and ensure that the string is entered in this format 
+            (that user entered string is 10 characters and contains (-)
+            after the second character and after fifth character).[Don't use RegExp, use string functions].
+            If the user input was correct: make the function create new date object, 
+            and initialize it with Day, Month, year values (using date constructor: Date(y,m,d)) 
+            and then show alert to the user with the date in date string format. 
+            If user input wasn't correct, show alert saying "Wrong Date Format". 
+            Create button “show date” that calls the function. 
+        */
+           input = prompt("enter your brith date enter the date in this frmat (DD – MM – YYYY) ex. 22–01–1999");
+           
+           function vaildateInput(birthDateInput){
+
+              if(birthDateInput.length != 10 || birthDateInput[2] != '-' || birthDateInput[5] != '-') 
+                 birthDateInput = prompt("invaild date please enter agin.");
+
+              var day = birthDateInput.slice(0,2);
+              var month = birthDateInput.slice(3,5)-1;
+              var year = birthDateInput.slice(6, );
+              date = new Date(year , month , day).toLocaleDateString();
+              document.write(date);
+           }
+            vaildateInput(input);
+        </script>
+    </body>
+</html>

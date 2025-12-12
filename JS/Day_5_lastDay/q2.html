@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="students"></div>
+
+    <script>
+        /*
+            Make JSON Object that holds Student data (ID, name, Age, Address, Skills (array), 
+            IsLeader (Boolean)).
+        */
+
+        var student = {
+            Id : 1,
+            name : "Maher",
+            age : 24,
+            address : "sohag",
+            skills : ["ASP.Net" , "C#" , "SQL"],
+            isLeader : false
+        };
+
+
+        /*
+        Make an array (of 3 students) of the previous student object,
+         and print each student name along with his skills.
+        
+        */
+
+        var students = [
+            {
+                Id: 1,
+                name: "Maher",
+                age: 24,
+                address: "Sohag",
+                skills: ["ASP.Net", "C#", "SQL"],
+                isLeader: false
+            },
+            {
+                Id: 2,
+                name: "Ahmed",
+                age: 25,
+                address: "Cairo",
+                skills: ["JavaScript", "HTML", "CSS"],
+                isLeader: true
+            },
+            {
+                Id: 3,
+                name: "Sara",
+                age: 23,
+                address: "Alex",
+                skills: ["Python", "Django", "MySQL"],
+                isLeader: false
+            }
+        ];
+
+        for(let i = 0; i < students.length; i++){
+            let sElement = document.createElement("div");
+           
+            let studentNameElement = document.createElement("h2");
+            studentNameElement.textContent = students[i].name;
+            
+            let studentSkillsElments = document.createElement("div");
+            for(let j = 0; j < students[i].skills.length; j++){
+                let skillElemnt = document.createElement("span");
+                skillElemnt = students[i].skills[j]+" , ";
+                studentSkillsElments.append(skillElemnt);
+            }
+            sElement.append(studentNameElement);
+            sElement.append(studentSkillsElments);
+
+            let parentDev = document.getElementById("students");
+
+            parentDev.append(sElement);
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+div{
+width:300px;
+height:100px;
+text-align:center;
+background:#EEE;
+box-shadow: 10px 15px 3px rgba(255, 0, 0, 0.3) /*inset*/;/*x y blur raduis color*/
+}
+/*
+	3px 3px 5px 6px #ccc;
+    The horizontal offset of the shadow, positive means the shadow will be on the right of the box, a negative offset will put the shadow on the left of the box.
+    The vertical offset of the shadow, a negative one means the box-shadow will be above the box, a positive one means the shadow will be below the box.
+    The blur radius (optional), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
+    The spread radius (optional), positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
+    Color
+
+*/
+
+#myDiv{
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black inset;
+	float: right;
+}
+
+</style>
+</head>
+<body>
+<div>
+<br/>
+<p>Box Shadow</p>
+</div>
+<div id="myDiv">
+different box shadow
+</div>
+</body>
+</html>

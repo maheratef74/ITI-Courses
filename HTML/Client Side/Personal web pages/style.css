@@ -1,0 +1,277 @@
+
+
+/* Body and General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar table {
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Header Section */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 30px 20px;
+    margin-top: 50px;
+}
+
+.header h1 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+.header h2 {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.header hr {
+    border: 0;
+    height: 2px;
+    background-color: white;
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    color: #4CAF50;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.container ul {
+    line-height: 1.8;
+}
+
+.container ol {
+    line-height: 1.8;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Links */
+a {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+a:visited {
+    color: #9C27B0;
+}
+
+/* Gallery Items */
+.gallery-item {
+    padding: 10px;
+}
+
+.gallery-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Skill Box */
+.skill-box {
+    padding: 15px;
+    background-color: white;
+}
+
+.skill-box h4 {
+    margin-top: 0;
+    color: #2196F3;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button Styles */
+.button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+input[type="reset"]:hover {
+    background-color: #da190b;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Font Sizes */
+h1 { font-size: 32px; }
+h2 { font-size: 26px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+
+/* Text Alignment Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Margin and Padding Utilities */
+.margin-top {
+    margin-top: 20px;
+}
+
+.padding {
+    padding: 15px;
+}
+
+/* Float */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* Display */
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+/* Position */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* Width and Height */
+.width-100 {
+    width: 100%;
+}
+
+.height-auto {
+    height: auto;
+}

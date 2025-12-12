@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <img src="4.jpg" alt="">
+    <script>
+        /*
+            2-Create a simple photo gallery and use the opacity property to make each image fade out 
+            (its opacity decreases to 0.3) when the mouse is over it, and fade in (its opacity increases to 1)
+             when the mouse is away.
+        */
+       var images = document.querySelectorAll("img");
+
+        images.forEach(img => {
+            img.addEventListener("mouseover", function() {
+                img.style.opacity = "0.3";
+            });
+
+            img.addEventListener("mouseout", function() {
+                img.style.opacity = "1";
+            });
+        });
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Day 2 JS </h1>
+        <h2>Question 2</h2>
+        <button onclick="getCurrentDate()">Current Date</button>
+        <p id = "nowDate"></p>
+        <script>
+            /*
+              Make a button that display the current date and time in local format on the page.
+            */
+            function getCurrentDate(){
+                var date = new Date().toLocaleString();
+                document.getElementById("nowDate").textContent = date;
+            }
+        </script>
+    </body>
+</html>

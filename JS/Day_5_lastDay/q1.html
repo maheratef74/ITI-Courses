@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <form action="welcome.html">
+    User Name: <input type="text" name="" id="userName">
+    Password: <input type="text" name="" id="password">
+    <input type="checkbox" id="checkbox"> Remember Me.
+    <input type="submit" name="" id="" onclick="saveDataToLocalStroage(event)">
+  </form>
+
+    <script>
+        /*
+        Make login form with username and password textboxes, 
+        add “remember me” check box, and save user name 
+        and password only if the user checked this checkbox then submit the form ( use local storage), 
+        and if the user didn’t check it and submit the form,
+         remove the saved user name and password from local storage if they saved before. 
+         After submit the form go to (welcome.html) page that says “Welcome”
+          and show user name from localStorage.
+        */
+        function saveDataToLocalStroage(ev){
+            ev.preventDefault();
+            let remeberMe = document.getElementById("checkbox").checked;
+            if(remeberMe){
+                let name = document.getElementById("userName").value;
+                let password = document.getElementById("password").value;
+                
+                localStorage.setItem("userName" , name);
+                localStorage.setItem("password" , password);
+            }
+            else{
+                localStorage.removeItem("userName");
+                localStorage.removeItem("password");
+            }
+            window.location.href = "welcome.html";
+        }
+
+    </script>
+</body>
+</html>

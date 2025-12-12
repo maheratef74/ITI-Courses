@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        Name: <input id="name" type="text"> 
+        <span id="nameError" style="color: red; display: none;"> invaild name</span>
+        <br> 
+        Email: <input type="email"> <br>
+        <select name="" id=""> 
+            <option value="">select</option>
+            <option value="">Sohag</option>
+            <option value="">Cairo</option>
+            <option value="">Alex</option>
+        </select><br>
+       Password: <input id="pass" type="password"><br>
+       Repeat Password <input id="repetPass" type="password">
+       <span id="passError" style="color: red; display: none;"> password and repeat password should be the same</span>
+       <br>
+      <input type="checkbox"> i accept the terms and conditions
+
+      <button id="submitBut" type="button">Register</button>
+    </form>
+    <script>
+
+        /*
+            3-Make a registration: 
+               a) Form fields: 
+                Full Name
+                Email
+                City (Drop-down list filled with some cities)
+                Password
+                Repeat password.
+                “I accept the terms and conditions” checkbox.
+
+                b)Register button, which redirects to another page saying: 
+                “Thank you, for registering on our website”.
+                When the user focuses on full name text,
+                 show red background for the input (use element.style.backgroundColor=”red”), 
+                 and when the input loses the focus show white background
+                  (use element.style.backgroundColor=”white”).
+
+                c)After the user finishes writing his full name and leaves the text box (blur), 
+                if the full name wasn't in the correct format (not empty string and more than 3 letters),
+                 show text next to the textbox saying “invalid name”, and focus the full name textbox,
+                  and select all text on it, else if the full name was incorrect format hide the text next to
+                   the textbox.
+
+                d)For Password and repeat password fields, when the user leaves the repeat password field,
+                 we need to validate that they’re identical (The same),
+                  and if they’re not the same show text beside it saying 
+                  “password and repeat password should be the same”.
+
+                    
+        */
+
+        document.getElementById("submitBut").addEventListener("click" , clickSubmit);
+        function clickSubmit(){
+            window.location.href = "Thanks.html";
+        }
+  
+        
+        document.getElementById("name").addEventListener("focus",changeBackgroundToRed);
+        function changeBackgroundToRed(){
+            var e = document.getElementById("name");
+            e.style.backgroundColor = "red";
+        }
+
+        document.getElementById("name").addEventListener("focusout",restTheBackground);
+        function restTheBackground(){
+            var e = document.getElementById("name");
+            e.style.backgroundColor = "white";
+        }
+
+        document.getElementById("name").addEventListener("blur", validateName);
+        function validateName() {
+            var nameInput = document.getElementById("name");
+            var errorSpan = document.getElementById("nameError");
+            var nameValue = nameInput.value;
+        
+            if (nameValue.length < 4) {
+                errorSpan.style.display = "inline";  
+                nameInput.focus();              
+                nameInput.select();                 
+            } else {
+                errorSpan.style.display = "none";   
+            }
+        }
+
+        document.getElementById("repetPass").addEventListener("blur" , validatePassword);
+        function validatePassword(){
+            var pass = document.getElementById("pass");
+            var repetPass = document.getElementById("repetPass");
+            if(pass.value != repetPass.value){
+                var errorSpan = document.getElementById("passError");
+                errorSpan.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>

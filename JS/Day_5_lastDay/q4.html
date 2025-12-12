@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX API call</title>
+</head>
+<body>
+    Enter User ID: <input id="userId">
+    <button onclick="getUser()">Display</button>
+
+    <h3>User Info:</h3>
+    <div id="result"></div>
+
+<script>
+
+function getUser() {
+
+    let id = Number(document.getElementById("userId").value);
+
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+            var user = JSON.parse(xmlhttp.responseText);
+
+            document.getElementById("result").innerHTML = `
+                <p>First Name: ${user.name.firstname}</p>
+                <p>Last Name: ${user.name.lastname}</p>
+                <p>Email: ${user.email}</p>
+                <p>Password: ${user.password}</p>
+            `;
+        }
+        else if (xmlhttp.readyState == 4) {
+            document.getElementById("result").innerHTML = "User not found!";
+        }
+    };
+    xmlhttp.open("GET", "https://fakestoreapi.com/users/" + id, true);
+    xmlhttp.send();
+}
+window.onerror = function(message){
+    alert("an error"+message);
+}
+</script>
+
+</body>
+</html>

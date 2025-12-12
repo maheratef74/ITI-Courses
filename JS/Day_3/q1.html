@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <h1>Day 3 Javascript</h1>
+    <h2>Question 1</h2>
+    <input onmousedown="showMouseButton(event)" onkeydown="showKeyCode(event)"></input>
+    <script>
+        /*
+        Create a new page that has a textbox, 
+        and alert the code of the key pressed on a textbox,
+         and which mouse button clicked on it.
+        */
+
+         function showKeyCode(ev) {
+            alert("Key code: " + ev.keyCode);
+        }
+
+        function showMouseButton(ev) {
+            var btn = "";
+            if (ev.button === 0) btn = "Left Mouse";
+            else if (ev.button === 1) btn = "Middle Mouse";
+            else if (ev.button === 2) btn = "Right Mouse";
+
+            alert("Mouse button clicked: " + btn);
+        }
+    </script>
+</body>
+</html>

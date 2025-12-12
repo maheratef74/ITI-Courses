@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Day 2 JS </h1>
+        <h2>Question 3</h2>
+        <p>Current Date: </p>
+        <p id = "nowDate"></p>
+        <script>
+            /*
+              Ask  the user to choose the color he want to use to display the date 
+              (Give him choices: (r) red, (b) blue, (g) green) 
+              and he enters the letter of color and use associative array to map his 
+              entered letter to color (if he entered r, use red color,…etc) 
+              use regular expressions , and then display this text: "Current Date:" 
+              in bold font, and next to it the current date value in local format using the 
+              color he choose. (Don’t use HTML tags, and don't use if condition or switch to 
+              check the color).
+
+            */
+            var colorKey = prompt("enter the chose color for r => red , b => blue , g => green");
+            var regex = /^[rbg]$/i;
+
+            while(!regex.test(colorKey)) colorKey = prompt("error enter r or b or g");
+
+            colors = [];
+            colors["r"] = "red";
+            colors["b"] = "blue";
+            colors["g"] = "green";
+
+            color = colors[colorKey];
+
+            var currentDate = new Date().toLocaleString();
+
+            var element = document.getElementById("nowDate");
+            element.style.color = color;
+           // element.style.fontWeight = bold();
+            element.textContent = currentDate//.bold();
+        </script>
+    </body>
+</html>

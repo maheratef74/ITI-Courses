@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <h1>Day 3 Javascript</h1>
+    <h2>Question 2</h2>
+
+    <button id="btnClock">Start clock</button>
+    <br> Current Time: <div id="time"></div>
+
+    <script>
+        /*
+            Make a button (Start clock), that shows an alert saying “Clock Started”
+            and displays the clock with the current time in local format 
+            (time only without date) in a div updated every second(use innerText property of div)
+            (document.getElementById(“div”).innerText=value).
+            a) Handle the onclick event of the (start clock) button using JavaScript (Not in the input tag).
+            b) Stop the clock when the user clicks (q) letter in the body, 
+               and show an alert saying “Clock stopped”.
+        */
+
+       window.onload = function (){
+        document.getElementById("btnClock").onclick = startClock;
+       }
+
+       var timer;
+       function startClock(ev){
+            alert("clock started");
+            timer = setInterval(updateTime , 1000);
+       }
+
+       function updateTime(){
+           document.getElementById("time").innerText = new Date().toLocaleTimeString();
+       }
+
+       document.body.addEventListener("keydown" , stopTimer);
+
+       function stopTimer(ev){
+            if(ev.key === "q"){
+               clearInterval(timer);
+               alert("Clock stopped");
+            }
+       }
+    </script>
+</body>
+</html>

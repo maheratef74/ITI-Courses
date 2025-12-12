@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Map New Page Example</title>
+</head>
+<body>
+
+    <h1>Clickable Regions on Image (Opens in New Tab)</h1>
+
+    <img src="img/maher.claro.jpeg" 
+         alt="A Diagram with Clickable Regions" 
+         usemap="#myShapeMap">
+
+    <map name="myShapeMap">
+        
+        <area shape="rect" 
+              coords="25, 25, 175, 125" 
+              href="page-for-rect.html" 
+              alt="Rectangle Area Link"
+              target="_blank">
+
+        <area shape="circle" 
+              coords="300, 75, 50" 
+              href="page-for-circle.html" 
+              alt="Circle Area Link"
+              target="_blank">
+
+        <area shape="poly" 
+              coords="450, 150, 550, 50, 650, 150" 
+              href="page-for-polygon.html" 
+              alt="Polygon Area Link"
+              target="_blank">
+
+    </map>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Day 2 JS </h1>
+        <h2>bouns</h2>
+
+        <script>
+
+            var nameRegex = /^[A-Za-z]{3,}(?:\s+[A-Za-z]+)*$/;
+            var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|net|org|edu)\.eg$/;
+            var mobileRegex = /^00201(0|1|2|5)\d{8}$/;
+
+            var fullName;
+            var email;
+
+            do{
+                fullName = prompt("Enter your Full Name (letters only):");
+            }while (!nameRegex.test(fullName));
+            
+            do{
+                email = prompt("Enter your Email (.eg domain only):");  
+            }while (!emailRegex.test(email));
+
+            do{
+                mobile = prompt("Invalid! Enter your mobile number in this format: 00201xxxxxxxxx");
+            }while (!mobileRegex.test(mobile));
+  
+            alert("Name and Email:\n" + fullName + "\n" + email);
+            alert("Your mobile number is:\n" + mobile);
+        </script>
+    </body>
+</html>

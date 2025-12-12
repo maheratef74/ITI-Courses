@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <h1>Day 3 Javascript</h1>
+    <h2>Question 3</h2>
+    <img src="IMG_5635.JPG" width="3000px" id="img" alt="">
+    <script>
+        /*
+            Create a page that contains one image, and use JavaScript Code (not in HTML tag) 
+            to handle onclick event on the image, 
+            increase a counter when the image is clicked and alert the score.
+            Use addEventListener to add a new handler for the onclick event listener.
+            After 5 seconds (Use setTimeOut), use removeEventListener 
+            to remove the event handler onclick of the image, and instead of it alert saying “Game Over”.
+        */
+        var score = 0 , img;
+        window.onload = function(){
+           img = document.getElementById("img");
+           img.addEventListener("click" , increaseScore);
+
+           setTimeout(removeScoreEvent, 5000);
+        }
+
+        function increaseScore(){
+            score++;
+            alert("now the score is: " + score);
+        }
+
+        function removeScoreEvent(){
+            img.removeEventListener("click", increaseScore);
+            alert("game over");
+        }
+    </script>
+</body>
+</html>
