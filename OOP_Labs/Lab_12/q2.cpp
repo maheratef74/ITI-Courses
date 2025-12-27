@@ -2,21 +2,26 @@
 using namespace std;
 
 class problem{
-
+  public:
+    int p;
 };
 
-class parent1{
+class parent1 : virtual public problem{
 public:
-    problem p;
+   
 };
 
-class parent2{
+class parent2:virtual  problem{
 public:
-    problem p;
+    
 };
 
 class child : public parent1, public parent2 {
-
+public:
+child(){
+    p = 10;
+    //p = 20;
+}
 };
 
 int main()
