@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .myDiv {
+            border: 5px solid black;
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+        }
+
+        .image{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myDiv" ondrop="drop(event)" ondragover="allowDrap(event)"></div>
+
+
+    <img id="img1" class="image" draggable="true" ondragstart="drag(event)"  src="html5.png" alt="">
+    <img id="img2" class="image" draggable="true" ondragstart="drag(event)" src="p.png" alt="">
+    <img id="img3" class="image" draggable="true" ondragstart="drag(event)" src="oop.webp" alt="">    
+</body>
+
+<script>
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("img");
+        if(data=="img1") ev.target.appendChild(document.getElementById(data));
+    }
+
+    function allowDrap(ev) {
+        ev.preventDefault();
+    }
+    function drag(ev) {
+     ev.dataTransfer.setData("img", ev.target.id);
+    }
+</script>
+</html> 

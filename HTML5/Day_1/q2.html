@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <meter min="0" max="100" low="50" high="80" value="100"></meter> Arabic
+    <br />
+    <meter min="0" max="100" low="50" high="80" value="75"></meter> English
+    <br />
+    <meter min="0" max="100" low="50" high="80" value="40"></meter> French
+
+    <br />
+    <time datetime="18-11-2001">18-11-2001</time>
+
+    <br />
+    <div>Audio</div>
+    <audio id="audio1" src="notification.mp3"></audio>
+    <button onclick="playAudio()">paly</button>
+    <button onclick="pauseAudio()">pause</button>
+
+    <div>Video</div>
+    <video
+      controls
+      autoplay
+      style="width: 400px; height: 200px"
+      src="sample.mp4"
+    ></video>
+
+    <br />
+    <input list="languages" name="language" list="languages" />
+    <datalist id="languages">
+      <option value="HTML5"></option>
+      <option value="CSS3"></option>
+      <option value="JavaScript"></option>
+      <option value="C#"></option>
+      <option value="Java"></option>
+    </datalist>
+
+    <br> <br>
+    <img src="html5.png" alt="">
+    <br>
+    <input type="image">
+    <br>
+    <input type="file">
+
+    <details>
+      <summary>More Info</summary>
+      <p>This is additional information that can be toggled.</p>
+    </details>
+
+
+
+    
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("audio1");
+        audio.play();
+      }
+
+      function pauseAudio() {
+        var audio = document.getElementById("audio1");
+        audio.pause();
+      }
+    </script>
+  </body>
+</html>
