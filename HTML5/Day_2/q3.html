@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q3</title>
+</head>
+<body>
+
+<canvas id="faceCanvas" width="300" height="300">
+
+</canvas>
+
+<script>
+    const canvas = document.getElementById("faceCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const sadFace = new Image();
+    const smileyFace = new Image();
+
+    sadFace.src = "sad.png";
+    smileyFace.src = "smiley.png";
+
+    function drawSad() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(sadFace, 0, 0, canvas.width, canvas.height);
+    }
+
+    function drawSmile() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(smileyFace, 0, 0, canvas.width, canvas.height);
+    }
+
+    sadFace.onload = drawSad;
+
+    canvas.addEventListener("mouseover", drawSmile);
+    canvas.addEventListener("mouseout", drawSad);
+</script>
+
+</body>
+</html>
