@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q6</title>
+    <style>
+    
+
+        .chip-container {
+            display: inline-flex;
+            align-items: center;
+            background-color: #e0e0e0;
+            border-radius: 50px;
+            padding-right: 12px;
+            height: 50px;
+            cursor: pointer;
+            overflow: hidden; 
+            font-family: sans-serif;
+        }
+
+        .chip-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .chip-content {
+            display: flex;
+            align-items: center;
+            max-width: 200px;
+            opacity: 1;
+            transition: max-width 0.5s ease, opacity 0.3s ease, margin 0.5s ease;
+            white-space: nowrap;
+        }
+
+        .chip-name {
+            padding: 0 10px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .close-btn {
+            font-weight: bold;
+            color: #888;
+            cursor: pointer;
+            padding: 5px;
+            transition: color 0.2s;
+        }
+
+
+        
+        .chip-content.closed {
+            max-width: 0;
+            opacity: 0;
+            margin-right: -12px; 
+            pointer-events: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="chip-container">
+        <img src="photo_2025-11-08_18-21-31.jpg" alt="Contact" class="chip-img" onclick="openChip()">
+        
+        <div id="chipContent" class="chip-content">
+            <span class="chip-name">Maher Atef</span>
+            <span class="close-btn" onclick="closeChip(event)">&times;</span>
+        </div>
+    </div>
+
+    <script>
+        const content = document.getElementById('chipContent');
+
+        function closeChip(event) {
+            event.stopPropagation();
+            content.classList.add('closed');
+        }
+
+        function openChip() {
+            content.classList.remove('closed');
+        }
+    </script>
+</body>
+</html>
