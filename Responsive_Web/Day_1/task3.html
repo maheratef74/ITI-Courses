@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task 3</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header header"
+                "sidenav main main sidebar"
+                "footer footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+            height: 90vh;
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+
+        .header {
+            grid-area: header;
+            background-color: blue;
+            padding: 20px;
+        }
+
+        .sidenav {
+            grid-area: sidenav;
+            background-color: chocolate;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: chartreuse;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: chocolate;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: blue;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <header class="header">header</header>
+    <nav class="sidenav">sidenav</nav>
+    <main class="main">main</main>
+    <aside class="sidebar">sidebar</aside>
+    <footer class="footer">footer</footer>
+</div>
+
+</body>
+</html>
